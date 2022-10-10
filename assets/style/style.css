@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+  --theme_dark: #231F20;
+  --theme_darkgrey: #40403F;
+  --theme_grey: #B5B7B8;
+  --theme_lightgrey: #EFF1F2;
+  --theme_white: #FFFFFF;
+  --theme_highlight: #EC8F00;
+  --theme_highlight2: #38C684;
+  --theme_highlight3: #D5306B;
+}
+
+body{
+  color: var(--theme_dark);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-weight: 700;
+}
