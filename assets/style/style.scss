@@ -1,0 +1,28 @@
+$theme_dark: #231F20;
+$theme_darkgrey: #40403F;
+$theme_grey: #B5B7B8;
+$theme_lightgrey: #EFF1F2;
+$theme_white: #FFFFFF;
+
+$theme_highlight: #EC8F00;
+$theme_highlight2: #38C684;
+$theme_highlight3: #D5306B;
+
+body{
+  color: $theme_dark;
+}
+
+h1{
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+}
+
+h2{
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
