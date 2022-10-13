@@ -1,11 +1,189 @@
-@media screen and (max-width: 767px){
-  header{
+:root{
+    --border-left: 5vw;
+    --border-right: 5vw;
+    --border-radius: 10px;
+}
 
-  }
-  content_body{
+@media screen and (max-device-width: 900px){
+    body{
+        padding-left: var(--border-left);
+        padding-right: var(--border-right);
+    }
 
-  }
-  footer{
+    h1{
+        font-weight: 700;
+        font-size: 40pt;
+    }
 
-  }
+    h2{
+        font-weight: 700;
+        font-size: 40pt;
+    }
+
+    h3{
+        font-weight: 600;
+        font-size: 25pt;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 25pt;
+    }
+
+    b{
+        font-weight: 600;
+    }
+
+    .button-icon{
+        color: var(--theme_dark);
+        font-size: 55pt !important;
+        text-align: right;
+    }
+
+    .small-icon{
+        font-size: 35pt !important;
+        margin-right: 1vw;
+    }
+
+    .highlight-icon{
+        color: var(--theme_highlight);
+    }
+
+    .symbols-filled {
+        font-variation-settings:
+             'FILL' 1,
+             'wght' 400,
+             'GRAD' 0,
+             'opsz' 48
+    }
+
+    .header{
+        position: sticky;
+        padding: 2vh 0 2vh 0;
+        background: white;
+    }
+
+    .header-heading{
+        width: calc(100vw - var(--border-left) - var(--border-right));
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+    }
+
+    .header-status{
+        margin-top: 1vh;
+        background: var(--theme_dark);
+        border-radius: var(--border-radius);
+        width: calc(100vw - var(--border-left) - var(--border-right));
+        height: 6vh;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        color: var(--theme_white);
+    }
+
+    .header-filter{
+        margin-top: 1vh;
+        width: calc(100vw - var(--border-left) - var(--border-right));
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .filter{
+        border-radius: var(--border-radius);
+        height: 4vh;
+        align-items: center;
+        display: flex;
+        margin-right: 2vw;
+        padding: 0 3vw 0 3vw;
+    }
+
+    .filter-button{
+        background: var(--theme_highlight);
+        color: white;
+    }
+
+    .filter-item{
+        border: solid var(--theme_dark);
+    }
+
+    .content{
+        width: calc(100vw - var(--border-left) - var(--border-right));
+    }
+
+    .content-video-item{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        column-gap: 2vw;
+        align-items: center;
+    }
+
+    .video-preview{
+        border-radius: var(--border-radius);
+        object-fit: cover;
+        width: calc(0.2 * (100vw - var(--border-left) - var(--border-right)));
+        height: calc(0.2 * (100vw - var(--border-left) - var(--border-right)));
+    }
+
+    .video-title{
+        width: calc((0.8 * (100vw - var(--border-left) - var(--border-right))) - 4vw);
+    }
+
+    .video-information{
+        margin-top: 0.5vh;
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        align-items: center;
+    }
+
+    .video-stats{
+        display: flex;
+    }
+
+    .video-stats-last i{
+        font-size: 20pt !important;
+        color: var(--theme_highlight);
+        padding-left: 0.5vw;
+    }
+
+    .video-stats-last{
+        justify-content: right;
+    }
+
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 6vh;
+        background-color: var(--theme_dark);
+        color: white;
+        padding-left: var(--border-left);
+        padding-right: var(--border-right);
+        display: flex;
+        align-items: center;
+
+    }
+
+    .footer-content{
+        width: calc(100vw - var(--border-left) - var(--border-right));
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+    }
+
+    .footer-linking{
+        display: grid;
+        align-items: center;
+        text-align: right;
+        grid-template-columns: 60% 40%;
+    }
+
+    .footer-linking p{
+        font-size: 20pt;
+    }
 }
