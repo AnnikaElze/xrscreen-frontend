@@ -1,6 +1,6 @@
 :root{
-    --border-left: 5vw;
-    --border-right: 5vw;
+    --border-left: 3vw;
+    --border-right: 3vw;
     --border-radius: 10px;
     --footer-height: 6vh;
 
@@ -94,7 +94,7 @@
     }
 
     .header-status{
-        margin-top: var(--spacing-smaller-vh);
+        margin-top: var(--spacing-normal-vh);
         background: var(--theme_dark);
         border-radius: var(--border-radius);
         width: calc(100vw - var(--border-left) - var(--border-right));
@@ -108,7 +108,7 @@
     }
 
     .header-filter{
-        margin-top: var(--spacing-smaller-vh);
+        margin-top: var(--spacing-normal-vh);
         width: calc(100vw - var(--border-left) - var(--border-right));
         overflow-x: auto;
         overflow-y: hidden;
