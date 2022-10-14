@@ -3,6 +3,7 @@
     --border-right: 3vw;
     --border-radius: 10px;
     --footer-height: 6vh;
+    --banner-height: 25vh;
 
     --spacing-smallest-vh: 0.5vh;
     --spacing-smaller-vh: 1vh;
@@ -29,7 +30,7 @@
     }
 
     h2{
-        font-weight: 700;
+        font-weight: 300;
         font-size: 40pt;
     }
 
@@ -79,6 +80,16 @@
              'opsz' 48
     }
 
+    .banner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: var(--banner-height);
+        width: 100vw;
+        object-fit: cover;
+
+    }
+
     .header{
         position: sticky;
         top: 0;
@@ -86,11 +97,22 @@
         background: white;
     }
 
+    .header-banner{
+        position: absolute !important;
+        top: var(--banner-height) !important;
+    }
+
     .header-heading{
         width: calc(100vw - var(--border-left) - var(--border-right));
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 80% 20%;
         align-items: center;
+    }
+
+    .header-heading-advanced-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .header-status{
