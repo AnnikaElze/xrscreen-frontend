@@ -91,6 +91,10 @@
         color: var(--theme_highlight);
     }
 
+    .highlight2-icon{
+        color: var(--theme_highlight2);
+    }
+
     .flipX{
        transform: scaleX(-1);
     }
@@ -234,7 +238,7 @@
 
     .progress{
         padding-top: var(--spacing-small-vh);
-        padding-bottom: var(--spacing-big-vh);
+        padding-bottom: var(--spacing-normal-vh);
     }
 
     .progress-bar{
@@ -250,11 +254,44 @@
         border-radius: var(--border-radius);
     }
 
+    .progress-slider{
+        width: calc(100vw - var(--border-left) - var(--border-right));
+        height: 0.5vh;
+        background-color: var(--theme_lightgrey);
+        border-radius: var(--border-radius);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .progress-slider-current{
+        width: calc(0.68 * (100vw - var(--border-left) - var(--border-right)));
+        background-color: var(--theme_highlight);
+        height: 0.5vh;
+        border-radius: var(--border-radius);
+    }
+
+    .progress-slider-thumb{
+        width: 3vw;
+        height: 3vw;
+        background: var(--theme_white);
+        border-radius: 50%;
+        border: solid 3px var(--theme_highlight);
+        margin-left: -1.5vw;
+    }
+
     .progress-info{
         padding-top: var(--spacing-smallest-vh);
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .progress-parameters{
+        padding-top: var(--spacing-small-vh);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .parameters{
