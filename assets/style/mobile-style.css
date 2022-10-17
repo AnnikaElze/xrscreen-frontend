@@ -39,6 +39,11 @@
         font-size: 25pt;
     }
 
+    h4{
+        font-weight: 300;
+        font-size: 35pt;
+    }
+
     p{
         font-weight: 300;
         font-size: 25pt;
@@ -72,6 +77,10 @@
         color: var(--theme_highlight);
     }
 
+    .flipX{
+       transform: scaleX(-1);
+    }
+
     .symbols-filled {
         font-variation-settings:
              'FILL' 1,
@@ -98,8 +107,9 @@
     }
 
     .header-banner{
-        position: absolute !important;
-        top: var(--banner-height) !important;
+        position: sticky;
+        padding-top: calc(var(--banner-height) + var(--spacing-normal-vh));
+        padding-bottom: var(--spacing-normal-vh);
     }
 
     .header-heading{
@@ -107,12 +117,6 @@
         display: grid;
         grid-template-columns: 80% 20%;
         align-items: center;
-    }
-
-    .header-heading-advanced-title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .header-status{
@@ -199,13 +203,58 @@
         justify-content: right;
     }
 
-    .footer-spacing{
-        position: fixed;
-        left: 0;
-        bottom: var(--footer-height);
-        width: 100vw;
-        height: var(--spacing-small-vh);
-        background-color: white;
+    .progress{
+        padding-top: var(--spacing-small-vh);
+        padding-bottom: var(--spacing-big-vh);
+    }
+
+    .progress-bar{
+        width: calc(100vw - var(--border-left) - var(--border-right));
+        background-color: var(--theme_lightgrey);
+        border-radius: var(--border-radius);
+    }
+
+    .progress-bar-current{
+        width: calc(0.68 * (100vw - var(--border-left) - var(--border-right)));
+        background-color: var(--theme_highlight);
+        height: 2vh;
+        border-radius: var(--border-radius);
+    }
+
+    .progress-info{
+        padding-top: var(--spacing-smallest-vh);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .parameters{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: var(--spacing-normal-vw);
+    }
+
+    .parameter-box{
+        background-color: var(--theme_lightgrey);
+        width: calc(0.5 * (100vw - var(--border-right) - var(--border-left) - var(--spacing-normal-vw)));
+        border-radius: var(--border-radius);
+        padding: var(--spacing-small-vh) var(--spacing-small-vw) var(--spacing-small-vh) var(--spacing-small-vw);
+    }
+
+    .parameter-box p{
+        color: var(--theme_grey);
+    }
+
+    .parameter-box-row{
+        display: flex;
+        align-items: center;
+        color: var(--theme_grey);
+    }
+
+    .heart-monitor{
+        border: solid var(--theme_highlight2);
+        background-color: var(--theme_highlight2-transparent) !important;
     }
 
     .footer{
@@ -220,6 +269,15 @@
         padding-right: var(--border-right);
         display: flex;
         align-items: center;
+    }
+
+    .footer-spacing{
+        position: fixed;
+        left: 0;
+        bottom: var(--footer-height);
+        width: 100vw;
+        height: var(--spacing-small-vh);
+        background-color: white;
     }
 
     .footer-content{

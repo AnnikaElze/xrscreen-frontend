@@ -9,6 +9,10 @@
   --theme_highlight: #EC8F00;
   --theme_highlight2: #38C684;
   --theme_highlight3: #D5306B;
+
+  --theme_highlight-transparent: rgba(236, 143, 0, 0.11);
+  --theme_highlight2-transparent: rgba(56, 198, 132, 0.11);
+  --theme_highlight3-transparent: rgba(213, 48, 107, 0.11);
 }
 
 *{
