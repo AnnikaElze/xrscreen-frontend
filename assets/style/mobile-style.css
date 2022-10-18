@@ -280,6 +280,15 @@
         margin-left: -1.5vw;
     }
 
+    .progress-slider-locked{
+        height: 0.5vh;
+        width: calc(0.2 * (100vw - var(--border-left) - var(--border-right)));
+        background-color: var(--theme_darkgrey);
+        border-radius: var(--border-radius);
+        margin-right: 0;
+        margin-left: auto;
+    }
+
     .progress-info{
         padding-top: var(--spacing-smallest-vh);
         display: flex;
