@@ -1,7 +1,7 @@
 :root{
     --border-left: 3vw;
     --border-right: 3vw;
-    --border-radius: 5px;
+    --border-radius: 3px;
     --footer-height: 6vh;
     --banner-height: 25vh;
 
@@ -17,7 +17,7 @@
     --spacing-small-vw: 2vw;
     --spacing-normal-vw: 3vw;
 
-    --button-width: 75vw;
+    --button-width: 30vw;
     --button-height: 5vh;
 
     --shadow-x: 0vw;
@@ -34,6 +34,7 @@
     h1{
         font-weight: 700;
         font-size: 25pt;
+        margin-right: var(--spacing-small-vw);
     }
 
     h2{
@@ -77,13 +78,13 @@
 
     .button-icon{
         color: var(--theme_dark);
-        font-size: 55pt !important;
+        font-size: 30pt !important;
         text-align: right;
     }
 
     .small-icon{
-        font-size: 35pt !important;
-        margin-right: var(--spacing-smaller-vw);
+        font-size: 20pt !important;
+        margin-right: var(--spacing-smallest-vw);
     }
 
     .highlight-icon{
@@ -156,6 +157,11 @@
         align-items: center;
     }
 
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
     .header-status{
         margin-top: var(--spacing-normal-vh);
         background: var(--theme_dark);
@@ -171,7 +177,6 @@
     }
 
     .header-filter{
-        margin-top: var(--spacing-normal-vh);
         width: calc(100vw - var(--border-left) - var(--border-right));
         overflow-x: auto;
         overflow-y: hidden;
@@ -184,8 +189,9 @@
         height: var(--spacing-big-vh);
         align-items: center;
         display: flex;
-        margin-right: var(--spacing-small-vw);
-        padding: 0 var(--spacing-normal-vw) 0 var(--spacing-normal-vw);
+        margin-left: var(--spacing-smallest-vw);
+        padding: 0 var(--spacing-small-vw) 0 var(--spacing-small-vw);
+        border: none;
     }
 
     .filter-button{
@@ -193,8 +199,20 @@
         color: white;
     }
 
+    .filter-button-add{
+        background: var(--theme_highlight);
+        color: white;
+        width: var(--spacing-big-vh); !important;
+        padding: 0; !important;
+        justify-self: right;
+        display: flex;
+        justify-content: center;
+    }
+
     .filter-item{
         border: solid var(--theme_dark);
+        border-width: 0.5px;
+        background-color: var(--theme_white);
     }
 
     .information{
