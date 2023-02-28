@@ -338,10 +338,41 @@ a {
     height: 50vh;
 }
 
+.editor-add_video{
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    border: solid 1.5pt var(--theme_darkgrey);
+}
+
+.editor-add_preview_image{
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    width: 12vw;
+    height: 12vh;
+    margin-right: var(--spacing-smaller-vw);
+    margin-bottom: var(--spacing-small-vh);
+    border: solid 1.5pt var(--theme_darkgrey);
+}
+
+.editor-add{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: var(--theme_darkgrey);
+}
+
+.editor-add:hover{
+    cursor: pointer;
+    background: var(--theme_white);
+}
+
 .editor-preview_image{
     border-radius: var(--border-radius);
     object-fit: cover;
-    width: auto;
+    width: 12vw;
     height: 12vh;
     margin-right: var(--spacing-smaller-vw);
     margin-bottom: var(--spacing-small-vh);
